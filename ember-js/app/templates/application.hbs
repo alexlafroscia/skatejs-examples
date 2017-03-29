@@ -1,0 +1,19 @@
+<p>
+  Below is an example of using the <code>my-cool-component</code> component, as generated in the <code>generator-skatejs</code> example.
+</p>
+
+<p>
+  Clicking on the element fires an event from Skate, which Ember can bind actions to.
+</p>
+
+<my-cool-component {{action 'ember-action' on='skateEvent'}}>
+  Here is some content filled in by Ember
+</my-cool-component>
+
+<ul>
+  {{#each events as |event|}}
+    <li>{{event}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

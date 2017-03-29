@@ -4,6 +4,6 @@
 
 ## Examples
 
-Nothing to see here!
+- [`generator-skatejs`](generator-skatejs): A Yeoman generator for creating new Skatejs components
 
 [skate-js]: https://github.com/skatejs/skatejs

@@ -1,0 +1,48 @@
+{
+  "name": "my-cool-component",
+  "version": "1.0.0",
+  "description": "`my-cool-component` custom element",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "scripts": {
+    "build": "webpack --config webpack/production.js -p",
+    "build:stats": "webpack --config webpack/development.js --json | webpack-bundle-size-analyzer",
+    "lint": "eslint src test",
+    "start": "webpack-dev-server --config webpack/development.js",
+    "test": "karma start",
+    "test:ci": "karma start --single-run"
+  },
+  "engines": {
+    "node": ">=6.7.0"
+  },
+  "dependencies": {
+    "skatejs": "^4.6.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "bore": "^2.0.1",
+    "chai": "^3.5.0",
+    "esdoc": "^0.5.2",
+    "eslint": "^3.18.0",
+    "eslint-plugin-import": "^2.2.0",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-webpack": "^2.0.3",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.5.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.3.2",
+    "webpack-bundle-size-analyzer": "^2.5.0",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0",
+    "yaml-loader": "^0.4.0"
+  }
+}

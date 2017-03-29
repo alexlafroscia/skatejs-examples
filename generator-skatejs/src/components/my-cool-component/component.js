@@ -1,7 +1,7 @@
 import style from '../../util/style.js';
 import css from './styles.scss';
 
-const { Component, h } = skate;
+const { Component, emit, h } = skate;
 
 export default class MyCoolComponent extends Component {
   /**
@@ -12,11 +12,18 @@ export default class MyCoolComponent extends Component {
   }
 
   renderCallback() {
+    const handleClick = () => emit(this, 'event-from-skate');
+
     return [
       style(this, css),
-      <p class="text">
-        Hello, world! I am my-cool-component!
-      </p>
+
+      <div onClick={handleClick}>
+        <p class="text">
+          Hello, world! I am my-cool-component!
+        </p>
+
+        <slot />
+      </div>
     ];
   }
 }

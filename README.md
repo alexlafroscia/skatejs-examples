@@ -6,5 +6,5 @@
 
 - [`generator-skatejs`](generator-skatejs): A Yeoman generator for creating new Skatejs components
 - [`Ember.js`](ember-js): A framework for creating ambitious web applications.
--
+
 [skate-js]: https://github.com/skatejs/skatejs
